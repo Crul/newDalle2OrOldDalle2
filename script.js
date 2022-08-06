@@ -261,7 +261,8 @@ function onKeyDown(event) {
     switch(event.key.toUpperCase()) {
         case 'N': setAnswer(true);      break;
         case 'O': setAnswer(false);     break;
-        case 'S': showNextImage();      break;
+        case 'S':
+        case 'W': showNextImage();      break;
         case 'T': showTitle(true);      break;
         case 'B': navigateHistory(-1);  break;
         case 'F': navigateHistory(1);   break;
