@@ -32,7 +32,7 @@ This is a personal project made just for fun. Don't expect a full app or game. S
 
 - O: Answer "OLD": the image has been generated **before** 6th June, 2022.
 - N: Answer "NEW": the image has been generated **after** 27th July, 2022.
-- W: Load New Image
+- S: Skip Image and load next one
 - T: Show Title
 - B: Previous image (Back)
 - F: Next image (Forward)
