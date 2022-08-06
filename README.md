@@ -24,7 +24,7 @@ This is a modification of a previous experiment ([r/dalle2 or /r/NotDALLE2 ?](ht
 This is a personal project made just for fun. Don't expect a full app or game. Some limitations are:
 
 - Images have been taken from [Web Archive](https://web.archive.org/web/*/labs.openai.com/s*) using the date value shown there. I'm not really sure if that's a reliable date to use as "generation date" because they could have been sent to Web Archive some time after the generation.
-- There are 250 fixed images of each type (500 in total) taken on the 8th August 2022. If you answer all of them you will get a message.
+- There are 195 fixed images of each type (390 in total) taken on the 8th August 2022. If you answer all of them you will get a message.
 - Because this page does not store or send any data you cannot save your score. All data will be lost on reload.
 - Although this page keeps track of what images have been shown and avoids repetitions, the list of "already seen images" will reset if you close or reload it. So expect to see repetitions in that case.
 
