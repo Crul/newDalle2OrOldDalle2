@@ -1,9 +1,9 @@
 from datetime import datetime
 import json
 
-MAX_OLD_DATE = datetime(2022, 4, 20)
+MAX_OLD_DATE = datetime(2022, 4, 25)
 MIN_NEW_DATE = datetime(2022, 7, 4)
-IMGS_LIMIT_PER_TYPE = 300
+IMGS_LIMIT_PER_TYPE = 500
 
 
 def main():

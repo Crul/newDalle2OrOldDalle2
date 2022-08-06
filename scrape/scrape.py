@@ -7,7 +7,7 @@ from scrapy import Request
 
 
 MIN_OLD_DATE = datetime(2022, 4, 6)
-MAX_OLD_DATE = datetime(2022, 4, 20)
+MAX_OLD_DATE = datetime(2022, 4, 25)
 MIN_NEW_DATE = datetime(2022, 7, 4)
 MAX_NEW_DATE = datetime(2022, 7, 18)
 IMGS_LIMIT_PER_TYPE = 500
