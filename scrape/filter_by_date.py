@@ -1,17 +1,18 @@
 from datetime import datetime
 import json
 
-MAX_OLD_DATE = datetime(2022, 6, 15)
-MIN_NEW_DATE = datetime(2022, 7, 27)
-MAX_IMGS_PER_TYPE = 250
+MAX_OLD_DATE = datetime(2022, 4, 20)
+MIN_NEW_DATE = datetime(2022, 7, 4)
+IMGS_LIMIT_PER_TYPE = 300
+
 
 def main():
     with open('scrapy-output.json', encoding='utf-8') as fh:
         all_data = json.load(fh)
     
-    old_data = filter(all_data, lambda date: date < MAX_OLD_DATE)
-    new_data = filter(all_data, lambda date: date > MIN_NEW_DATE)
-    limit = min(MAX_IMGS_PER_TYPE, len(old_data), len(new_data))
+    old_data = filter(all_data, lambda date: date <= MAX_OLD_DATE)
+    new_data = filter(all_data, lambda date: date >= MIN_NEW_DATE)
+    limit = min(IMGS_LIMIT_PER_TYPE, len(old_data), len(new_data))
     
     data = {
         'old': old_data[:limit],
