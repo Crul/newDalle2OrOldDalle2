@@ -124,7 +124,7 @@ function showTitle(force) {
 
     } else {
         postTitle.innerHTML = (force || showTitleAlwaysChk.checked)
-            ? `${postData.post.title} by ${postData.post.author}`
+            ? postData.post.title
             : GENERIC_TITLE;
     }
 }
