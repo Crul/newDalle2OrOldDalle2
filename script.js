@@ -114,17 +114,22 @@ function showTitle(force) {
     }
 
     var post = postData.post;
+    var title = post.title
+        .replace(/(.*) × DALL·E \| (.*)/, '$2 (by $1)')
+        .replace('DALL·E | ', '')
+        .replace(/ +/g, ' ')
+        .trim()
     if (postData.answer !== undefined) {
         var isNewDalle2 = post.isNew;
         var isCorrectAnswer = (postData.answer == isNewDalle2);
         postTitle.innerHTML =
             `[${isNewDalle2 ? 'NEW' : 'OLD'}] `
             + (isCorrectAnswer ? '✅' : '❌')
-            + ` <a href="${post.url}" target="_blank">${post.title}</a>`;
+            + ` <a href="${post.url}" target="_blank">${title}</a>`;
 
     } else {
         postTitle.innerHTML = (force || showTitleAlwaysChk.checked)
-            ? postData.post.title
+            ? title
             : GENERIC_TITLE;
     }
 }
