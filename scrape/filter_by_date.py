@@ -27,7 +27,8 @@ def main():
 def filter(all_data, comp_fn):
     return [
         data for data in all_data
-        if comp_fn(datetime.strptime(data['date'], '%Y-%m-%d %H:%M:%S'))
+        if data['img_url'] != 'https://cdn.openai.com/API/images/dall-e-2-og.jpg'
+            and comp_fn(datetime.strptime(data['date'], '%Y-%m-%d %H:%M:%S'))
     ]
 
 
